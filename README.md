@@ -78,9 +78,3 @@ npx sass --watch src/scss/main.scss:style.css
 
 ```
 
-
-
-```
-
----
-
