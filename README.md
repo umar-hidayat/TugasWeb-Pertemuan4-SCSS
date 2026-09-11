@@ -1,4 +1,4 @@
-# Tugas Rutin 4: Konversi CSS ke SCSS (7-1 Pattern)
+# Tugas Web Pertemuan 4: Konversi CSS ke SCSS (7-1 Pattern)
 
 Repository ini berisi hasil *refactoring* stylesheets dari Tugas Rutin 2 (Landing Page & Portofolio Personal) menggunakan **SCSS** berbasis arsitektur **7-1 Pattern**, dikompilasi ke CSS menggunakan Dart SASS.
 
