@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #{$bg-light};
+  --surface-color: #{$surface-light};
+  --text-main: #{$text-main-light};
+  --text-muted: #{$text-muted-light};
+  --primary: #{$primary-light};
+  --primary-hover: #{$primary-hover-light};
+  --border-color: #{$border-light};
+  --shadow: #{$shadow-light};
+
+  @media (prefers-color-scheme: dark) {
+    --bg-color: #{$bg-dark};
+    --surface-color: #{$surface-dark};
+    --text-main: #{$text-main-dark};
+    --text-muted: #{$text-muted-dark};
+    --primary: #{$primary-dark};
+    --primary-hover: #{$primary-hover-dark};
+    --border-color: #{$border-dark};
+    --shadow: #{$shadow-dark};
+  }
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+form br {
+  display: none;
+}

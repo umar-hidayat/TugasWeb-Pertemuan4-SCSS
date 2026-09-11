@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build & Cache Outputs
+dist/
+.vite/
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db

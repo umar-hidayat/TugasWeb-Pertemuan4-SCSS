@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+header {
+  @include card-style;
+  @include flex-center(column, flex-start, stretch, 0.75rem);
+  margin-bottom: 1.5rem;
+
+  @include respond-to("desktop-nav") {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  nav ul {
+    @include flex-center(row, flex-start, center, 1rem);
+    flex-wrap: wrap;
+    list-style: none;
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

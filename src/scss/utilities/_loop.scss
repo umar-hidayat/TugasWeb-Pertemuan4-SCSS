@@ -1,0 +1,11 @@
+$spaces: (
+  "sm": 0.5rem,
+  "md": 1rem,
+  "lg": 1.5rem
+);
+
+@each $key, $val in $spaces {
+  .mb-#{$key} {
+    margin-bottom: $val;
+  }
+}

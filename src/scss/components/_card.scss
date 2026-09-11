@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: $radius;
+  margin-top: 0.75rem;
+}
